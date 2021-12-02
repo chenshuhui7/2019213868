@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;    
+  }
+  
+  body {
+    background-color: rgb(24, 84, 102);
+  }
+  
+  .box {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 1fr 40px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    background-color:white;
+    margin: 40px;
+    width: auto;
+    height: 800px;
+    border-width: 0px;
+    border-radius: 10px;
+    border-style: solid;
+
+  }
+  
+  .header {
+    grid-area: header;
+    padding: 10px;
+    margin-left: 30px;
+ 
+  }
+
+  .header h2 {
+    /* text-align:center; */
+    padding-left: 300px;
+}
+  
+  .main {
+ 
+    grid-area: main;
+ 
+  }
+  
+  .footer {
+    grid-area: footer;
+    padding: 10px;
+    background-color: rgb(24, 84, 102);
+
+  }
+  .footer p {
+    text-align: center;
+  }
+
+  .contents {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "Stable  details";
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width:auto;
+    height:650px;
+ 
+  }
+
+  
+.Stable {
+    grid-area: Stable;
+    display: grid;
+    grid-template-columns: 10% repeat(5, 18%);
+    grid-template-rows: repeat(11, 9%);
+    grid-template-areas:
+      'box1  box2  box3  box4  box5  box6'
+      'box7   .     c4    c6    c10   c14'
+      'box8   .     c4    c6    c10   c14'
+      'box9   c1    .     c7    c11   .  '
+      'box10  c1    .     c7    c11   .  '
+      'box11  .     .     .     c12   .  '
+      'box12  .     .     .     c12   .  '
+      'box13  c2    c5    c8    c13   .  '
+      'box14  c2    c5    c8    c13   .  '
+      'box15  c3     .    c9    .     .  '
+      'box16  c3     .    c9    .     .  ';
+  
+    background-color: rgb(194, 228, 245);
+    /* padding: 20px; */
+    border-width: 2px;
+    border-color: rgb(194, 228, 245);
+    border-style: solid;
+    border-radius: 5px;
+    margin-left: 40px;
+    width: auto;
+    height:680px;
+  }
+  
+  .details {
+    grid-area: details;
+    background-color: rgb(249, 250, 210);
+    padding: 20px;
+    border-width: 2px;
+    border-color:lemonchiffon;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 80px;
+    width: auto;
+    height: 400px;
+  }
+  
+  .item1 {
+    grid-area: box1;
+  }
+  
+  .item2 {
+    grid-area: box2;
+  }
+  
+  .item3 {
+    grid-area: box3;
+  }
+  
+  .item4 {
+    grid-area: box4;
+  }
+  
+  .item5 {
+    grid-area: box5;
+  }
+  
+  .item6 {
+    grid-area: box6;
+  }
+  
+  .item7 {
+    grid-area: box7;
+  }
+  
+  .item8 {
+    grid-area: box8;
+  }
+  
+  .item9 {
+    grid-area: box9;
+  }
+  
+  .item10 {
+    grid-area: box10;
+  }
+  
+  .item11 {
+    grid-area: box11;
+  }
+  
+  .item12 {
+    grid-area: box12;
+  }
+  
+  .item13 {
+    grid-area: box13;
+  }
+  
+  .item14 {
+    grid-area: box14;
+  }
+  
+  .item15 {
+    grid-area: box15;
+  }
+  
+  .item16 {
+    grid-area: box16;
+  }
+
+  /* 以下共十四门课   */
+  .c1 {
+    grid-area: c1;
+  }
+  
+  .c2 {
+    grid-area: c2;
+  }
+  
+  .c3 {
+    grid-area: c3;
+  }
+  
+  .c4 {
+    grid-area: c4;
+  }
+  
+  .c5 {
+    grid-area: c5;
+  }
+  
+  .c6 {
+    grid-area: c6;
+  }
+  
+  .c7 {
+    grid-area: c7;
+  }
+  
+  .c8 {
+    grid-area: c8;
+  }
+  
+  .c9 {
+    grid-area: c9;
+  }
+  
+  .c10 {
+    grid-area: c10;
+  }
+  
+  .c11 {
+    grid-area: c11;
+  }
+
+  .c12 {
+    grid-area: c12;
+  }
+  
+  .c13 {
+    grid-area: c13;
+  }
+  
+  .c14 {
+    grid-area: c14;
+  }
+  /* 共十四门课   */
+
+  
+  .day,
+  .ctime {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .course {
+    padding: 11px;
+    margin: 2px;
+    border: 1px solid #cac9ce;
+    border-radius: 5px;
+    color:#f0efe7
+  }
+  .course h3 {
+      font-size:14px;
+  }
+  .copyright p {
+      color: white;
+  }
+
+  .details h3 {
+     display: block;
+     padding: 8px;
+  }
+
+  .cname,
+  .teacher,
+  .location,
+  .info {
+     font-weight: bold;
+     font-size:20px;
+     padding:20px;
+
+  }
