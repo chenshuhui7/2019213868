@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <title>我的个人网页</title>
+    <!--网页图标-->
+    <link rel="shortcut icon" href="static/img/icon.png" type="image/x-icon"> 
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1" />
+</head>
+
+<body>
+   <div class="grid-box">
+        <header>
+
+            <div id="page_site-info">
+                <div id="site-title">
+                    <span class="blogtitle">我不知将去何方，但我已在路上</span>
+                </div>
+            </div>
+
+            <div class="h-nav">
+                <ul >
+                    <li class="active"><a href="index.html">个人首页</a></li>
+                    <li><a href="static/课程表/index.html" target="blank">我的课表</a></li>
+                    <li><a href="#">我的笔记</a></li>
+                    <li><a href="#">我的博客</a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        <aside class="sidebar">
+            <div class="user">
+                <img src="static/img/user.jpg" title="QQ头像" />
+            </div>
+            <nav class="nav">
+                <a href="#info">资料</a>
+                <a href="#works">作品</a>
+                <a href="#story">经历</a>
+            </nav>
+        </aside>
+        <main>
+            <section id="info">
+                <div class="wrap">
+                    <h2 class="title">个人资料</h2>
+                    <div class="row">
+                        <div class="col-left">
+                            <p>姓名：陈姝慧</p>
+                            <p>性别：女</p>
+                            <p>年龄：20</p>
+                            <p>学校：华中师范大学</p>
+                        </div>
+                        <div class="col-right">
+                            <p>QQ：1520916370</p>
+                            <p>GitHub：<a href="https://github.com/chenshuhui7" target="blank">chenshuhui</a></p>
+                            <p>博客：<a href="#">https://CSHblog.com(待开发）</a></p>
+                            <p>邮箱：<a href="mailto:1520916370@qq.com">1520916370@qq.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="works">
+                <div class="wrap">
+                    <h2 class="title">个人作品</h2>
+                        <div class="works-item">
+                            <img src="static/img/schedul.png" />
+                            <h3 style="text-align:center;padding: 1.5em;">JS动态课程表</h3>
+                        </div>
+                </div>
+            </section>
+            <section id="story">
+                <div class="wrap">
+                    <h2 class="title">个人经历</h2>
+                        <div class="col-m-8">
+                            <ul class="timeline">
+                                <li>2016.8：襄阳五中</li>
+                                <li>2019.9：华中师范大学</li>
+                            </ul>
+                        </div>
+                        <div class="center-fixed">
+                            <img src="static/img/funny.png" width="500px" height="800px" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2021 By ChenShuhui</p>
+        </footer>
+
+   </div>
+
+</body>
+
+</html>
